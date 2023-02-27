@@ -26,7 +26,7 @@ let data = [
     startDate: "27 May, 2021",
     endDate: "8 Jun, 2021",
     description:
-      "Ho Chi Minh City, also known as Saigon, is a bustling and vibrant city in southern Vietnam. It is the largest city in the country and has a rich history, including its role in the Vietnam War. Today, it is known for its lively street markets, delicious food, and modern skyscrapers.",
+      "The Sydney Opera House is a multi-venue performing arts centre in Sydney. Located on the banks of the Sydney Harbour, it is often regarded as one of the 20th century's most famous and distinctive buildings",
     imageUrl: "https://source.unsplash.com/JmuyB_LibRo",
   },
 ];
