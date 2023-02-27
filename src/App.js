@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Card from "./components/Card";
+import data from "./data";
 
-function App() {
+const App = () => {
+  // Location Font Effect
+  const location = data.map((x) => x.location.toUpperCase());
+
+  // Card Elements
+  // map -> take 1 object from array -> give as item
+  // map -> 2nd arg is the index!
+  const cardElements = data.map((set, index) => (
+    <Card key={set.title} item={set} location={location[index]} />
+  ));
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      {cardElements}
     </div>
   );
-}
+};
 
 export default App;

@@ -1,3 +1,4 @@
-# travel-journal
+# What did I learn
 
-Small Solo-Project using React!
+- props
+- pass data from json to props
